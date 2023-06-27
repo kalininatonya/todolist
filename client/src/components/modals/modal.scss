@@ -1,0 +1,48 @@
+.modal {
+  position: fixed;
+  top: 0;
+
+  &__overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-gray);
+  }
+
+  &__content {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 10%;
+    max-width: 550px;
+    min-width: 245px;
+    margin: auto;
+    padding: 20px;
+    z-index: 1;
+    text-align: center;
+    background-color: var(--color-white);
+    border-radius: 24px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__heading {
+    margin: 0 0 20px 140px;
+  }
+
+  &__icon-close {
+    width: 20px;
+    height: 21px;
+    margin: 0 10px;
+    cursor: pointer;
+    background: url("../../icons/close.svg") no-repeat;
+    border: none;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
