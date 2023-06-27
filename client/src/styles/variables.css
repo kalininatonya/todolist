@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Roboto;
+  src: url("fonts/roboto.woff") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-size-small: 14px;
+  --font-size: 16px;
+  --font-size-text: 0.8em;
+  --font-family: "Roboto", sans-serif;
+  --border: 1px solid var(--color-gray);
+  --border-radius: 8px;
+  --box-shadow-focus: 0 0 0 2px var(--color-blue);
+  --min-width-field: 360px;
+  --width: 500px;
+
+  --color-gray: #707579;
+  --color-slate-gray: #909599;
+  --color-light-gray: #dbddde;
+  --color-blue: #4ea4f6;
+  --color-light-blue: #8ac1f3;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-error: #ff6666;
+}
