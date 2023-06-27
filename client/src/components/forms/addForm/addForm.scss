@@ -1,0 +1,77 @@
+@import '../../../styles/mixins.scss';
+
+.addForm {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+
+  &__field {
+    @include field();
+    margin-bottom: 10px;
+    padding: 10px;
+
+    &:focus {
+      @include focus(var(--color-blue));
+    }
+  }
+
+  &__field-invalid {
+    margin-bottom: 5px;
+    border: 2px solid var(--color-error);
+    opacity: 1;
+
+    &:focus {
+      @include focus(var(--color-error));
+    }
+  }
+
+  &__description {
+    @include field();
+    margin-bottom: 20px;
+    padding: 10px;
+
+    &:focus {
+      @include focus(var(--color-blue));
+    }
+  }
+
+  &__error {
+    margin-bottom: 10px;
+    font-size: var(--font-size-small);
+    text-align: left;
+    color: var(--color-error);
+  }
+
+  &__btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn-add {
+    @include btn(var(--color-blue), var(--color-white));
+    padding: 10px 20px;
+
+    &:hover {
+      @include btn(var(--color-light-blue), var(--color-white));
+    }
+
+    &:disabled {
+      cursor: none;
+      background-color: var(--color-light-gray);
+      color: var(--color-slate-gray);
+    }
+  }
+
+  &__btn-close {
+    @include btn(var(--color-gray), var(--color-white));
+    padding: 10px 20px;
+    margin-left: 10px;
+
+    &:hover {
+      @include btn(var(--color-slate-gray), var(--color-white));
+    }
+  }
+}
+
+
