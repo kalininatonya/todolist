@@ -81,7 +81,7 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 {
-                    from: 'src/icons/favicon.ico',
+                    from: 'src/favicon.ico',
                     to: path.join(__dirname, 'public'),
                     noErrorOnMissing: true
                 }
