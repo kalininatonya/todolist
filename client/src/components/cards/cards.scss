@@ -1,0 +1,61 @@
+.cards {
+  max-width: 600px;
+  margin: auto;
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 190px;
+    padding: 15px;
+    margin: 15px;
+    text-align: left;
+    cursor: move;
+    background-color: var(--color-light-gray);
+    border-radius: var(--border-radius);
+  }
+
+  &__title {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--color-black);
+
+    &:hover {
+      color: var(--color-blue);
+    }
+  }
+
+  &__iconsContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-delete {
+    width: 20px;
+    height: 21px;
+    margin: 5px 10px 5px 5px;
+    cursor: pointer;
+    background: url("../../icons/delete.svg") no-repeat;
+    border: none;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__icon-screamer {
+    width: 20px;
+    height: 21px;
+    margin: 5px 0;
+    background: url("../../icons/screamer.svg") no-repeat;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__warning {
+    margin: 20px;
+  }
+}
