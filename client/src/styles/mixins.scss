@@ -1,0 +1,20 @@
+@mixin btn($b-color, $color) {
+  cursor: pointer;
+  background-color: $b-color;
+  color: $color;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+@mixin field() {
+  padding: 10px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  opacity: 0.3;
+}
+
+@mixin focus($color) {
+  outline: 2px solid $color;
+  opacity: 1;
+  border: 1px solid $color;
+}

@@ -1,0 +1,39 @@
+@import 'mixins';
+@import 'variables.css';
+
+body {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  position: relative;
+  text-align: center;
+}
+
+.btn__add {
+  @include btn(var(--color-blue), var(--color-white));
+  padding: 10px 20px;
+  margin-bottom: 20px;
+
+  &:hover {
+    @include btn(var(--color-light-blue), var(--color-white));
+  }
+}
+
+.sortButton {
+  @include btn(var(--color-gray), var(--color-white));
+  display: flex;
+  padding: 10px 20px;
+  margin-left: 60px;
+
+  &:hover {
+    @include btn(var(--color-slate-gray), var(--color-white));
+  }
+}
+
+.selected {
+  opacity: 0.6;
+}
