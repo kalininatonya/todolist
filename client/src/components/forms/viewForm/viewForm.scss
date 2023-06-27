@@ -1,0 +1,33 @@
+@import '../../../styles/mixins.scss';
+
+.viewForm {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+
+  &__field {
+    @include field();
+    margin-bottom: 10px;
+    padding: 10px;
+    opacity: 1;
+  }
+
+  &__description {
+    @include field();
+    margin-bottom: 20px;
+    padding: 10px;
+    opacity: 1;
+  }
+
+  &__btn-close {
+    @include btn(var(--color-gray), var(--color-white));
+    padding: 10px 20px;
+    margin-left: 10px;
+
+    &:hover {
+      @include btn(var(--color-slate-gray), var(--color-white));
+    }
+  }
+}
+
+
